@@ -1,0 +1,28 @@
+# En tu plantilla HTML, puedes renderizar el formulario y acceder a los datos enviados por el usuario. Por ejemplo:
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de predicción</title>
+    </head>
+    <body>
+        <form id = "myForm"  action="/predict" method="POST">
+            <table>
+              <tr>
+                <td><label for="feature_1">Sepal Length:</label><br></td>
+                <td> <input type="number" step="0.01" id="feature_1" name="s_length"><br> </td>
+                <td><label for="feature_2">Sepal Width:</label><br> </td>
+                <td><input type="number" step="0.01" id="feature_2" name="s_width"><br></td>
+                <td><label for="feature_3">Petal Length:</label><br></td>
+                <td><input type="number" step="0.01" id="feature_3" name="p_length"><br></td>
+                <td><label for="feature_4">Petal Width:</label><br></td>
+                <td><input type="number" step="0.01" id="feature_4" name="p_width"><br></td>
+              </tr>
+              <tr>
+                <td colspan="8"><input type="submit" value="Submit"></td>
+              </tr>
+            </table>
+          </form>
+    </body>
+</html>
+
